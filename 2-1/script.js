@@ -5,11 +5,12 @@ $._get = function(url, callback) {
 	})
 }
 
+
 $(document).ready(function() {
 	var masterLocation;
 	var search_term = 'devmountain';
 	function setupApi() {
-		var masterLocation = 'http://devmounta.in?q='+search_term;		
+		masterLocation = 'http://devmounta.in?q='+search_term;		
 		$(document).ajaxError(function(e, xhr, settings, thrown) {
 			console.log("Ajax ERROR", xhr, settings, thrown);
 		})
