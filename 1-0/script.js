@@ -1,3 +1,3 @@
 $(document).ready(function() {
-	alert("congratulations, you fixed it!');
+	alert("congratulations, you fixed it!");
 });
