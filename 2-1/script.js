@@ -5,6 +5,7 @@ $._get = function(url, callback) {
 	})
 }
 
+
 $(document).ready(function() {
 	var masterLocation;
 	var search_term = 'devmountain';
