@@ -1,12 +1,12 @@
 $(document).ready(function() {
-	$('.list-group-items').click(function() {
-		$(this).find('span', function(span) {
-			var num = Number($(this).html());
+	$('.list-group-item').click(function() {
+		$(this).each(function(span) {
+			var num = Number($(this).find('span').html());
 			num--;
 			if (num <= 0) {
 				num = '';
 			}
-			$(this).html = num;	
+			$(this).find('span').html(num);
 		})
 	});
 });
